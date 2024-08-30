@@ -1,3 +1,4 @@
+import SearchForm from "@/components/SearchForm";
 import { useRouter } from "next/router";
 
 //쿼리 스트링 가져오기
@@ -7,6 +8,7 @@ export default function Search() {
   return (
     <div>
       <h1>search 페이지</h1>
+      <SearchForm initialValue={q} />
       <h2>{q} 검색 결과</h2>
     </div>
   );
