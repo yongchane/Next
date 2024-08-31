@@ -21,10 +21,8 @@ export default function Home() {
 
   return (
     <>
-     
-        <SearchForm />
-        <MovieList className={styles.movieList} movies={movies} />
-      </Container>
+      <SearchForm />
+      <MovieList className={styles.movieList} movies={movies} />
     </>
   );
 }
