@@ -1,11 +1,11 @@
-import formatDate from "@/lib/formatDate";
-import styles from "@/styles/MovieReviewList.module.css";
-import StarRating from "./StarRating";
+import formatDate from '@/lib/formatDate';
+import styles from '@/styles/MovieReviewList.module.css';
+import StarRating from './StarRating';
 
 const labels = {
   sex: {
-    male: "남성",
-    female: "여성",
+    male: '남성',
+    female: '여성',
   },
 };
 
@@ -22,7 +22,9 @@ function MovieReview({ movieReview }) {
 
 export default function MovieReviewList({ movieReviews }) {
   if (!movieReviews || movieReviews.length === 0) {
-    return <div className={styles.empty}>아직 작성된 리뷰가 없습니다.</div>;
+    return <div className={styles.empty}>
+      아직 작성된 리뷰가 없습니다.
+    </div>
   }
   return (
     <ul className={styles.movieReviewList}>
