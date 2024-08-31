@@ -8,3 +8,9 @@
   border: none;
   border-radius: 10px;
 }
+
+:golbal(.light) .button {
+  color: #f9f9f9;
+  background-color: #505050;
+}
+/* light라는 클래스의 css를 다른 모듈 css에서 사용하려면 :golbal이라는 문법을 사용해야함(module.css에서 제공하는 기능)*/
